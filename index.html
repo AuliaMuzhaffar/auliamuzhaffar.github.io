@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata dasar: Karakter set dan viewport untuk responsivitas mobile -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Judul dan deskripsi yang akan muncul di hasil pencarian Google -->
+    <title>CS Graduate | Data Science & AI Portfolio</title>
+    <meta name="description"
+        content="Portfolio of a Computer Science graduate specializing in Data Analysis, Data Science, and Machine Learning.">
+
+    <!-- Library Eksternal: 
+         - Swiper: Untuk slider sertifikat yang interaktif 
+         - FontAwesome: Untuk ikon-ikon media sosial dan tombol -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- File CSS Internal: Berisi semua aturan desain Neobrutalism kita -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Pre-loader: Layar pembuka hitam yang memberikan kesan premium saat website dimuat -->
+    <div id="loader">
+        <div class="loader-text">CS.DATA</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Progress Bar & Navigation: Indikator posisi scroll dan menu utama -->
+    <div class="nav-progress" id="progress-bar"></div>
+    <nav>
+        <div class="container">
+            <a href="#home" class="logo">CS.DATA</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Tech Skills</a>
+                <a href="#soft-skills">Soft Skills</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- Tombol Call-to-Action (CTA) utama -->
+            <a href="#contact" class="neo-btn" style="background: var(--main); color: black;">Let's Talk</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-name-tag">Aulia Muzhaffar</div>
+                    <h1 class="hero-title">
+                        Turning Data <br> Into <br>
+                        <span class="highlight-box"><span id="typewriter">Intelligence</span><span
+                                class="typewriter-cursor"></span></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Hi, I'm a Data Enthusiast focused on building scalable AI models and uncovering hidden patterns
+                        in complex datasets.
+                    </p>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <a href="#projects" class="neo-btn btn-primary-pulse"
+                            style="background: var(--accent-pink); color: white;">VIEW PROJECTS</a>
+                        <a href="./assets/docs/CV_Aulia_Muzhaffar.pdf" target="_blank" class="neo-btn"
+                            style="background: var(--main);">DOWNLOAD CV</a>
+                        <a href="#about" class="neo-btn" style="background: var(--white);">LEARN MORE</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="mailto:auliamuzhaffar@gmail.com" class="social-pop" title="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/AuliaMuzhaffar" target="_blank" class="social-pop" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/auliamuzhaffar" target="_blank" class="social-pop"
+                            title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="./assets/images/aulia_foto.png" alt="Aulia Muzhaffar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container" style="padding: 6rem 0;">
+        <h2 class="section-title">About Me</h2>
+
+        <!-- The 3 Pillars Bio -->
+        <div class="about-pillars">
+            <div class="pillar-card">
+                <i class="fas fa-chart-pie pillar-icon"></i>
+                <h4>Data Analyst</h4>
+                <p>Translating complex numbers into actionable business insights through thorough cleaning and impactful
+                    visualizations.</p>
+            </div>
+            <div class="pillar-card">
+                <i class="fas fa-brain pillar-icon"></i>
+                <h4>Data Science & AI</h4>
+                <p>Solving real-world challenges using statistical modeling, predictive analytics, and deep learning
+                    algorithms.</p>
+            </div>
+            <div class="pillar-card">
+                <i class="fas fa-comments pillar-icon"></i>
+                <h4>Leadership</h4>
+                <p>Experience at BEM FMIPA developing ability to communicate data-driven findings to diverse
+                    stakeholders.</p>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <!-- Progress bar vertikal yang akan diisi via JavaScript -->
+            <div class="timeline-progress-bar"></div>
+            <!-- Education -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <span class="date">2021 - 2026</span>
+                    <h3>B.Sc. in Computer Science</h3>
+                    <p>Universitas Syiah Kuala <span class="badge yellow">GPA 3.67/4.0</span></p>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <span class="date">FEB - JUL 2024</span>
+                    <h3>Bangkit Academy 2024</h3>
+                    <p>Machine Learning Path <span class="badge pink">Certified</span></p>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <span class="date">SEP - DEC 2024</span>
+                    <h3>Laboratory Assistant</h3>
+                    <p>Syiah Kuala University: Python, IR, and AI Labs.</p>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <span class="date">FEB 2026 - PRESENT</span>
+                    <h3>Pacmann Academy 2026</h3>
+                    <p>Data Science Program <span class="badge cyan">In Progress</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects container">
+        <h2 class="section-title">My Projects</h2>
+
+        <!-- Filter Group: Tombol untuk menyaring kategori proyek. 
+             Atribut 'data-filter' digunakan oleh JavaScript untuk mencocokkan kategori. -->
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="da">Data Analyst</button>
+            <button class="filter-btn" data-filter="ds">Data Science</button>
+            <button class="filter-btn" data-filter="ml">AI & ML</button>
+        </div>
+
+        <div class="project-grid">
+            <!-- Project Card: Setiap kartu memiliki 'data-category' yang sesuai dengan tombol filter di atas -->
+            <!-- Project 1: Aceh Resilience Monitor (ARM) -->
+            <div class="project-card" data-category="da ml">
+                <div class="project-image" style="background: #0b0e14;">
+                    <img src="./assets/images/project_arm_dashboard.png" alt="Aceh Resilience Monitor Dashboard"
+                        style="object-fit: contain;">
+                </div>
+                <h3>ACEH RESILIENCE MONITOR (ARM)</h3>
+                <p>AI-driven Food Price Intelligence Platform. Monitoring 18 commodities and providing Early Warning
+                    System (EWS) for price spikes using Meta Prophet forecasting.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag orange"><i class="fas fa-brain"></i> Meta Prophet</span>
+                    <span class="tech-tag yellow"><i class="fab fa-python"></i> Python</span>
+                    <span class="tech-tag cyan"><i class="fas fa-chart-line"></i> Data Analytics</span>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://github.com/aceh-resilience-monitor/Aceh-Resilience-Monitor" target="_blank"
+                        class="neo-btn"
+                        style="background: var(--black); color: white; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">GITHUB
+                        REPO</a>
+                    <a href="https://thankful-river-084494910.7.azurestaticapps.net" target="_blank" class="neo-btn"
+                        style="background: var(--main); color: black; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">LIVE
+                        DASHBOARD</a>
+                </div>
+            </div>
+
+            <!-- Project 2: ITE Law -->
+            <div class="project-card" data-category="ml">
+                <div class="project-image">
+                    <img src="./assets/images/project_cybersecurity_ai_1778008856312.png" alt="ITE Law Detection">
+                </div>
+                <h3>ITE LAW VIOLATION DETECTION (IndoBERT)</h3>
+                <p>Deep learning system to detect ITE Law Violations in YouTube & TikTok comments using IndoBERT and
+                    CNN-BiLSTM.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag purple"><i class="fas fa-brain"></i> IndoBERT</span>
+                    <span class="tech-tag cyan"><i class="fas fa-network-wired"></i> CNN-BiLSTM</span>
+                    <span class="tech-tag yellow"><i class="fab fa-python"></i> Python</span>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://github.com/AuliaMuzhaffar/UU-ITE-Violation-Detection" target="_blank"
+                        class="neo-btn"
+                        style="background: var(--black); color: white; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">GITHUB
+                        REPO</a>
+                    <a href="#" class="neo-btn"
+                        style="background: var(--main); color: black; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">CANVA
+                        DOCS</a>
+                </div>
+            </div>
+
+            <!-- Project 3: DermaScan -->
+            <div class="project-card" data-category="ml">
+                <div class="project-image">
+                    <img src="./assets/images/project_skin_scanner_ai_1778008871693.png" alt="Dermascan">
+                </div>
+                <h3>DERMASCAN: SKIN INFECTION ID</h3>
+                <p>MobileNetV2 based model to identify fungal or bacterial skin infections. Bangkit Academy Capstone
+                    Project.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag pink"><i class="fas fa-project-diagram"></i> TensorFlow</span>
+                    <span class="tech-tag green"><i class="fas fa-mobile-alt"></i> MobileNetV2</span>
+                    <span class="tech-tag cyan"><i class="fas fa-eye"></i> Computer Vision</span>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://github.com/Dermascan-C241-PS084/DermaScan-ML" target="_blank" class="neo-btn"
+                        style="background: var(--black); color: white; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">GITHUB
+                        REPO</a>
+                    <a href="#" class="neo-btn"
+                        style="background: var(--main); color: black; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">CANVA
+                        DOCS</a>
+                </div>
+            </div>
+
+            <!-- Project 4: Search Engine -->
+            <div class="project-card" data-category="da">
+                <div class="project-image">
+                    <img src="./assets/images/project_search_engine_data_1778008887580.png" alt="News Search Engine">
+                </div>
+                <h3>NEWS ARTICLE SEARCH ENGINE</h3>
+                <p>Information retrieval system using TF-IDF and BM25 algorithms to improve news search accuracy.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag yellow"><i class="fab fa-python"></i> Python</span>
+                    <span class="tech-tag cyan"><i class="fas fa-search"></i> TF-IDF</span>
+                    <span class="tech-tag purple"><i class="fas fa-list-ol"></i> BM25</span>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://github.com/AuliaMuzhaffar/Search-Engine" target="_blank" class="neo-btn"
+                        style="background: var(--black); color: white; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">GITHUB
+                        REPO</a>
+                    <a href="#" class="neo-btn"
+                        style="background: var(--main); color: black; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">CANVA
+                        DOCS</a>
+                </div>
+            </div>
+
+            <!-- Project 5: Soil Classification -->
+            <div class="project-card" data-category="ds">
+                <div class="project-image">
+                    <img src="./assets/images/project_soil_classification_ai_1778009294381.png"
+                        alt="Soil Classification">
+                </div>
+                <h3>SOIL TYPE CLASSIFICATION (CNN)</h3>
+                <p>CNN model classifying 5 types of soil with 95% accuracy using TensorFlow framework.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag pink"><i class="fas fa-project-diagram"></i> TensorFlow</span>
+                    <span class="tech-tag orange"><i class="fas fa-layer-group"></i> CNN</span>
+                    <span class="tech-tag green"><i class="fas fa-seedling"></i> Deep Learning</span>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="neo-btn"
+                        style="background: var(--black); color: white; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">GITHUB
+                        REPO</a>
+                    <a href="#" class="neo-btn"
+                        style="background: var(--main); color: black; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">CANVA
+                        DOCS</a>
+                </div>
+            </div>
+
+            <!-- Project 6: Gesture Control -->
+            <!-- <div class="project-card" data-category="ml">
+                <div class="project-image">
+                    <img src="./assets/images/project_gesture_control_cv_1778009307943.png" alt="Gesture Control">
+                </div>
+                <h3>GESTURE CONTROL (OpenCV)</h3>
+                <p>Real-time hand gesture detection for image manipulation using OpenCV and Hand Tracking algorithms.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag purple"><i class="fas fa-video"></i> OpenCV</span>
+                    <span class="tech-tag yellow"><i class="fas fa-hand-paper"></i> Mediapipe</span>
+                    <span class="tech-tag cyan"><i class="fab fa-python"></i> Python</span>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="neo-btn"
+                        style="background: var(--black); color: white; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">GITHUB
+                        REPO</a>
+                    <a href="#" class="neo-btn"
+                        style="background: var(--main); color: black; flex: 1; font-size: 0.8rem; text-align: center; padding: 0.8rem 0;">CANVA
+                        DOCS</a>
+                </div>
+            </div> -->
+        </div>
+
+        <div style="text-align: center; margin-top: 6rem; margin-bottom: 4rem;" id="view-more-container">
+            <button id="view-more-btn" class="neo-btn"
+                style="background: var(--accent-pink); color: white; padding: 1.2rem 4rem; font-size: 1.2rem; box-shadow: 10px 10px 0px #000;">
+                VIEW ALL PROJECTS
+            </button>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming</h3>
+                <div class="skill-list">
+                    <span class="skill-item yellow"><i class="fab fa-python" style="color: #3776AB;"></i> Python</span>
+                    <span class="skill-item cyan"><i class="fas fa-chart-bar" style="color: #336791;"></i> SQL</span>
+                    <span class="skill-item pink"><i class="fas fa-microchip" style="color: #00599C;"></i> C</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-layer-group"></i> Libraries & Frameworks</h3>
+                <div class="skill-list">
+                    <span class="skill-item green"><i class="fas fa-table" style="color: #150458;"></i> Pandas</span>
+                    <span class="skill-item orange"><i class="fas fa-brain" style="color: #F7931E;"></i>
+                        Scikit-Learn</span>
+                    <span class="skill-item pink"><i class="fas fa-project-diagram" style="color: #FF6F00;"></i>
+                        TensorFlow</span>
+                    <span class="skill-item cyan"><i class="fas fa-fire" style="color: #EE4C2C;"></i> PyTorch</span>
+                    <span class="skill-item yellow"><i class="fas fa-chart-area" style="color: #11557C;"></i>
+                        Matplotlib</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <div class="skill-list">
+                    <span class="skill-item orange"><i class="fas fa-chart-pie" style="color: #E97627;"></i>
+                        Tableau</span>
+                    <span class="skill-item yellow"><i class="fas fa-columns" style="color: #F2C811;"></i>
+                        PowerBI</span>
+                    <span class="skill-item purple"><i class="fab fa-docker" style="color: #2496ED;"></i> Docker</span>
+                    <span class="skill-item green"><i class="fab fa-git-alt" style="color: #F05032;"></i> Git</span>
+                    <span class="skill-item cyan"><i class="fas fa-cloud" style="color: #0089D6;"></i> GCP/Azure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="soft-skills" class="container" style="padding: 6rem 0;">
+        <h2 class="section-title">Soft Skills</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+            <!-- Problem Solving -->
+            <div class="neo-card soft-skill-card cyan">
+                <i class="fas fa-lightbulb soft-skill-icon"></i>
+                <h3 style="font-size: 1.1rem; text-transform: uppercase; font-weight: 900;">Problem Solving</h3>
+                <p class="soft-skill-desc">Analytical approach to complex issues</p>
+            </div>
+
+            <!-- Critical Thinking -->
+            <div class="neo-card soft-skill-card pink">
+                <i class="fas fa-brain soft-skill-icon"></i>
+                <h3 style="font-size: 1.1rem; text-transform: uppercase; font-weight: 900;">Critical Thinking</h3>
+                <p class="soft-skill-desc">Data-driven logical reasoning</p>
+            </div>
+
+            <!-- Analytical Mindset -->
+            <div class="neo-card soft-skill-card yellow">
+                <i class="fas fa-chart-line soft-skill-icon"></i>
+                <h3 style="font-size: 1.1rem; text-transform: uppercase; font-weight: 900;">Analytical Mindset</h3>
+                <p class="soft-skill-desc">Interpreting patterns and trends</p>
+            </div>
+
+            <!-- Project Management -->
+            <div class="neo-card soft-skill-card green">
+                <i class="fas fa-tasks soft-skill-icon"></i>
+                <h3 style="font-size: 1.1rem; text-transform: uppercase; font-weight: 900;">Project Management</h3>
+                <p class="soft-skill-desc">Leading projects to successful delivery</p>
+            </div>
+
+            <!-- Team Collaboration -->
+            <div class="neo-card soft-skill-card purple">
+                <i class="fas fa-users soft-skill-icon"></i>
+                <h3 style="font-size: 1.1rem; text-transform: uppercase; font-weight: 900;">Team Collaboration</h3>
+                <p class="soft-skill-desc">Effective communicator and listener</p>
+            </div>
+
+            <!-- Public Speaking -->
+            <div class="neo-card soft-skill-card orange">
+                <i class="fas fa-microphone-alt soft-skill-icon"></i>
+                <h3 style="font-size: 1.1rem; text-transform: uppercase; font-weight: 900;">Public Speaking</h3>
+                <p class="soft-skill-desc">Confidently presenting insights</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CERTIFICATES (Carousel 2.0)
+         Bagian ini menampilkan bukti validasi keahlian menggunakan Swiper.js.
+         Urutan ini ditempatkan setelah Soft Skills sebagai "Final Proof" sebelum Kontak. -->
+    <section id="certificates" class="container" style="padding: 8rem 0;">
+        <div class="cert-header">
+            <h2 class="section-title" style="margin-bottom: 0;">Certificates</h2>
+            <!-- Navigasi Custom untuk Swiper (Tombol Kiri/Kanan) -->
+            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <button class="cert-prev neo-btn"
+                    style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background: var(--white); box-shadow: 4px 4px 0px #000;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="cert-next neo-btn"
+                    style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background: var(--main); box-shadow: 4px 4px 0px #000;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Swiper Container -->
+        <div class="swiper cert-swiper">
+            <div class="swiper-wrapper" style="padding-bottom: 2rem;">
+                <!-- 1. Bangkit Academy Slide -->
+                <div class="swiper-slide">
+                    <!-- Kartu Sertifikat v2: Menggunakan Clean Neobrutalist dengan Dynamic Shadows -->
+                    <div class="cert-card-v2 pink-shadow">
+                        <div class="cert-img-box">
+                            <!-- Thumbnail asli hasil screenshot dari file PDF -->
+                            <img src="./assets/images/certificates/bangkit_thumb.png" alt="Bangkit Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <!-- Badge Label untuk memperkuat kesan dokumen resmi -->
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <!-- Tag Kategori Sertifikat -->
+                        <span class="cert-tag" style="background: var(--accent-pink); color: white;">MACHINE
+                            LEARNING</span>
+                        <h3 class="cert-title">Bangkit Academy Graduate</h3>
+                        <p class="cert-meta">Google, Gojek, Tokopedia, Traveloka • 2024</p>
+                        <!-- Tombol Aksi Dinamis (Warna tombol mengikuti tema kartu) -->
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/[Certificate][Bangkit 2024 Batch 1] Certificate - M322D4KY2577.pdf"
+                                target="_blank" class="neo-btn cert-btn-primary cert-btn-pink">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. TensorFlow Developer -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 cyan-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/tensorflow_thumb.png" alt="TensorFlow Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--accent-cyan);">DEEP LEARNING</span>
+                        <h3 class="cert-title">TensorFlow Developer Professional</h3>
+                        <p class="cert-meta">DeepLearning.AI • 2024</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/DeepLearning.AI TensorFlow Developer Professional Certificate.pdf"
+                                target="_blank" class="neo-btn cert-btn-primary cert-btn-cyan">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Generative AI -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 yellow-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/genai_thumb.png" alt="Generative AI Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--main);">ARTIFICIAL INTELLIGENCE</span>
+                        <h3 class="cert-title">Generative AI for Everyone</h3>
+                        <p class="cert-meta">DeepLearning.AI (Andrew Ng) • 2024</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/Generative AI for Everyone.pdf" target="_blank"
+                                class="neo-btn cert-btn-primary cert-btn-yellow">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Data Analytics -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 pink-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/analytics_thumb.png" alt="Data Analytics Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--accent-pink); color: white;">DATA
+                            ANALYTICS</span>
+                        <h3 class="cert-title">Analyze Data to Answer Questions</h3>
+                        <p class="cert-meta">Google Career Certificate • 2023</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/Analyze Data to Answer Questions_Coursera 3Z5YVQLG3ZLT.pdf"
+                                target="_blank" class="neo-btn cert-btn-primary cert-btn-pink">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Math for ML -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 cyan-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/math_ml_thumb.png" alt="Math for ML Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--accent-cyan);">MATHEMATICS</span>
+                        <h3 class="cert-title">Mathematics for ML & Data Science</h3>
+                        <p class="cert-meta">DeepLearning.AI • 2024</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/Mathematics for Machine Learing and Data Science.pdf"
+                                target="_blank" class="neo-btn cert-btn-primary cert-btn-cyan">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Git & GitHub -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 yellow-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/git_github_thumb.png" alt="Git Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--main);">VERSION CONTROL</span>
+                        <h3 class="cert-title">Introduction to Git and GitHub</h3>
+                        <p class="cert-meta">Google via Coursera • 2023</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/Intro git and github_Coursera 9JSD65TYBGAH.pdf"
+                                target="_blank" class="neo-btn cert-btn-primary cert-btn-yellow">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Data Analytics (Coursera) -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 pink-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/[DA]_thumb.png" alt="Data Analytics Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--accent-pink); color: white;">DATA
+                            ANALYTICS</span>
+                        <h3 class="cert-title">Coursera: Data Analytics Specialization</h3>
+                        <p class="cert-meta">Coursera Certification • ID: A967EB74DP9F</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/[DA]Coursera A967EB74DP9F.pdf" target="_blank"
+                                class="neo-btn cert-btn-primary cert-btn-pink">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Deep Learning (Coursera) -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 cyan-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/[DL]_thumb.png" alt="Deep Learning Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--accent-cyan);">DEEP LEARNING</span>
+                        <h3 class="cert-title">Coursera: Deep Learning Specialization</h3>
+                        <p class="cert-meta">Coursera Certification • ID: AS8V7MRS9DJW</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/[DL]Coursera AS8V7MRS9DJW.pdf" target="_blank"
+                                class="neo-btn cert-btn-primary cert-btn-cyan">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Machine Learning (Coursera) -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 yellow-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/[ML]_thumb.png" alt="Machine Learning Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--main);">MACHINE LEARNING</span>
+                        <h3 class="cert-title">Coursera: Machine Learning Specialization</h3>
+                        <p class="cert-meta">Coursera Certification • ID: YJ9H8TB9HJTT</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/[ML]Coursera YJ9H8TB9HJTT.pdf" target="_blank"
+                                class="neo-btn cert-btn-primary cert-btn-yellow">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Natural Language Processing (Coursera) -->
+                <div class="swiper-slide">
+                    <div class="cert-card-v2 cyan-shadow">
+                        <div class="cert-img-box">
+                            <img src="./assets/images/certificates/[NLP]_thumb.png" alt="NLP Certificate"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="cert-preview-label" style="position: absolute; bottom: 10px; right: 10px;">
+                                OFFICIAL PDF</div>
+                        </div>
+                        <span class="cert-tag" style="background: var(--accent-cyan);">NATURAL LANGUAGE
+                            PROCESSING</span>
+                        <h3 class="cert-title">Coursera: NLP Specialization</h3>
+                        <p class="cert-meta">Coursera Certification • ID: NU7JHV878LDS</p>
+                        <div class="cert-actions">
+                            <a href="./assets/docs/certificate/[NLP]Coursera NU7JHV878LDS.pdf" target="_blank"
+                                class="neo-btn cert-btn-primary cert-btn-cyan">
+                                <i class="fas fa-file-pdf"></i> VIEW FULL PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal"
+        style="background: var(--accent-yellow); padding: 8rem 0; border-top: var(--border);">
+        <div class="container">
+            <div class="contact-terminal">
+                <!-- Left Panel: Info -->
+                <div class="contact-info-panel">
+                    <div class="contact-status-badge">
+                        <span class="status-dot-blink"></span>
+                        Status: Available for Projects
+                    </div>
+
+                    <h2
+                        style="font-size: 3.5rem; font-weight: 900; line-height: 0.9; margin-bottom: 1.5rem; letter-spacing: -2px;">
+                        LET'S <br> WORK <br> <span style="color: var(--accent-pink);">TOGETHER</span>
+                    </h2>
+                    <p style="font-weight: 600; color: #444; max-width: 300px; margin-bottom: 2rem;">
+                        Have a challenge? Let's turn your data into impact.
+                    </p>
+
+                    <div class="contact-methods-group">
+                        <a href="mailto:auliamuzhaffar@gmail.com" class="contact-method"
+                            style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-envelope" style="font-size: 1.2rem;"></i>
+                            <span style="font-weight: 800; font-size: 0.9rem;">auliamuzhaffar@gmail.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/auliamuzhaffar" target="_blank" class="contact-method"
+                            style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                            <i class="fab fa-linkedin-in" style="font-size: 1.2rem;"></i>
+                            <span style="font-weight: 800; font-size: 0.9rem;">linkedin.com/in/auliamuzhaffar</span>
+                        </a>
+                        <a href="https://github.com/AuliaMuzhaffar" target="_blank" class="contact-method"
+                            style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                            <i class="fab fa-github" style="font-size: 1.2rem;"></i>
+                            <span style="font-weight: 800; font-size: 0.9rem;">github.com/AuliaMuzhaffar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Panel: Form -->
+                <div class="contact-form-panel">
+                    <form action="#" class="contact-form">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+
+                        <label class="form-label">Email Address</label>
+                        <input type="email" placeholder="john@example.com" required>
+
+                        <label class="form-label">Project Details</label>
+                        <textarea rows="4" placeholder="Tell me about your project goals..." required></textarea>
+
+                        <button type="submit" class="neo-btn"
+                            style="background: var(--black); color: white; width: 100%; padding: 1.5rem; font-weight: 900; letter-spacing: 2px;">
+                            INITIATE CONTACT
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mega Footer -->
+    <footer class="mega-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#home" class="footer-logo">AULIA MUZHAFFAR</a>
+                    <p style="color: #999; line-height: 1.6; max-width: 300px;">
+                        Data Enthusiast & AI Specialist. Turning complex datasets into actionable business intelligence.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certificates">Certificates</a>
+                    <a href="#skills">Skills</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Socials</h4>
+                    <a href="https://linkedin.com/in/auliamuzhaffar" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/AuliaMuzhaffar" target="_blank">GitHub</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Medium</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aulia Muzhaffar. Built with Neobrutalism & Intelligence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
