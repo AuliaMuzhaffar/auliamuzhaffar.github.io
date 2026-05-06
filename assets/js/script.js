@@ -1,14 +1,20 @@
 // --- LOGIKA PRE-LOADER ---
-// Menyembunyikan layar loading hitam setelah semua aset halaman selesai dimuat.
-window.addEventListener('load', () => {
+// Menyembunyikan layar loading hitam setelah aset utama dimuat.
+function hideLoader() {
     const loader = document.getElementById('loader');
-    setTimeout(() => {
+    if (loader) {
         loader.style.opacity = '0';
         setTimeout(() => {
             loader.style.display = 'none';
         }, 500);
-    }, 300); // 300ms: Memberikan kesan transisi yang sangat cepat dan profesional
-});
+    }
+}
+
+// Jalankan saat semua aset (gambar, dll) selesai dimuat
+window.addEventListener('load', hideLoader);
+
+// Fail-safe: Sembunyikan loader setelah 2 detik meskipun belum semua aset selesai (mencegah stuck)
+setTimeout(hideLoader, 2000);
 
 // --- EFEK TYPEWRITER (MESIN TIK) ---
 // Membuat teks pada bagian Hero mengetik secara otomatis untuk kesan interaktif.
